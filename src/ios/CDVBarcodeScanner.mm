@@ -870,9 +870,10 @@ parentViewController:(UIViewController*)parentViewController
 
     self.toolbar = [[UIToolbar alloc] init];
     self.toolbar.autoresizingMask = UIViewAutoresizingFlexibleWidth;
-
+    
     id cancelButton = [[UIBarButtonItem alloc]
-                       initWithBarButtonSystemItem:UIBarButtonSystemItemCancel
+                       initWithTitle:@"Klaar"
+                       style:UIBarButtonItemStyleDone
                        target:(id)self
                        action:@selector(cancelButtonPressed:)
                        ];
